@@ -1,7 +1,7 @@
 import {execFileSync} from 'child_process';
 import * as fs from 'fs';
 import * as inquirer from 'inquirer';
-import * as webpbin from 'webp-bin';
+import * as webpbin from 'cwebp-bin';
 
 
 let input   = '';
@@ -47,5 +47,5 @@ inquirer
         console.log('Arguments: ', answers);
 
         //console.log('relative path: ', relativePath);
-        execFileSync(webpbin.path, `${input} -q ${answers['quality']} -o ${output}`.split(' '));
+        execFileSync(webpbin, `${input} -q ${answers['quality']} -o ${output}`.split(' '));
     });

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var child_process_1 = require("child_process");
 var fs = require("fs");
 var inquirer = require("inquirer");
-var webpbin = require("webp-bin");
+var webpbin = require("cwebp-bin");
 var input = '';
 var output = '';
 if (process.argv[2] == null) {
@@ -45,5 +45,5 @@ inquirer
     .then(function (answers) {
     console.log('Arguments: ', answers);
     //console.log('relative path: ', relativePath);
-    child_process_1.execFileSync(webpbin.path, (input + " -q " + answers['quality'] + " -o " + output).split(' '));
+    child_process_1.execFileSync(webpbin, (input + " -q " + answers['quality'] + " -o " + output).split(' '));
 });
