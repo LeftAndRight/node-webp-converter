@@ -1,0 +1,26 @@
+{
+  "name": "webp-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeftAndRight/node-webp-converter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeftAndRight/node-webp-converter/issues"
+  },
+  "homepage": "https://github.com/LeftAndRight/node-webp-converter#readme",
+  "dependencies": {
+    "@types/inquirer": "0.0.35",
+    "@types/node": "^8.0.54",
+    "inquirer": "^4.0.1",
+    "typescript": "^2.6.2",
+    "webp-bin": "^0.1.4"
+  }
+}
