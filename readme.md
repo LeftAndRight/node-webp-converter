@@ -1,4 +1,4 @@
-# Explination
+# Explanation
 This is repo is a utility designed to make converting any image into a webp format easy.
 Its currently only working in windows. It requires nodejs and npm to be installed.
 After installation you should be able to right click on any file and select an option to 'Convert to WebP' which will prompt you for quality options.
